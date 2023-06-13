@@ -14,7 +14,6 @@ keywords = ["rs-broker", "broker", "redis","kafka","pulsar"]
 readme = "README.md"
 license = "MIT"
 repository = "https://github.com/daheige/rs-broker"
-documentation = "https://docs.rs/rs-broker"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
