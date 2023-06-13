@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = [
+    "kafka-broker",
+    "redis-broker",
+    "pulsar-broker"
+]
+
+[workspace.package]
+edition = "2021"
+authors = ["daheige"]
+description = "rust broker crate for kafka,redis,pulsar etc"
+keywords = ["rs-broker", "broker", "redis","kafka","pulsar"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/daheige/rs-broker"
+documentation = "https://docs.rs/rs-broker"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace.dependencies]
+env_logger = "0.10.0"
+log = "0.4.19"
