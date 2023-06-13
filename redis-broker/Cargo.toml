@@ -1,13 +1,13 @@
 [package]
 name = "redis-broker"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["daheige"]
 description = "redis-broker publish/consumer library"
 keywords = ["redis", "broker", "redis-broker","rs-broker","pub-sub"]
 readme = "README.md"
 license = "MIT"
-repository = "https://github.com/daheige/rs-tbox"
+repository = "https://github.com/daheige/rs-broker"
 documentation = "https://docs.rs/redis-broker"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
