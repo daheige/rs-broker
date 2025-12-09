@@ -22,4 +22,4 @@ env_logger = "0.11.8"
 # read config for .env
 dotenv = "0.15.0"
 
-rust-broker="1.0.1"
+rust-broker = "1.1.0"

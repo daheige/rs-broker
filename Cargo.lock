@@ -543,9 +543,9 @@ dependencies = [
 
 [[package]]
 name = "rust-broker"
-version = "1.0.1"
+version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0a67594512b6921e115bbddc9ef07c06a661ef1d693fc1e29abd8bb3208fef46"
+checksum = "e69ec5c252746a09db8cd33953d3bfba3e433f1af5f476a1abb09775eaec327b"
 dependencies = [
  "async-trait",
  "env_logger",

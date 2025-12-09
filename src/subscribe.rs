@@ -19,8 +19,8 @@ async fn main() {
     let group = "group-1";
     println!("consume message begin...");
     broker
-        .subscribe(topic, group, move |payload| {
-            let message = String::from_utf8_lossy(payload).to_string();
+        .subscribe(topic, group, |payload| {
+            let message = String::from_utf8_lossy(&payload).to_string();
             async move {
                 println!("handler msg");
                 let _ = handler(&message).await;
