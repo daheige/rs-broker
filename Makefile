@@ -1,7 +1,7 @@
 dev_image_name :=rs-dev
 version :=v1.0
 image_name :=rs-broker-svc
-service_name :=rs-broker
+service_name :=rs-broker-demo
 root_dir :=$(shell pwd)
 
 build-dev:

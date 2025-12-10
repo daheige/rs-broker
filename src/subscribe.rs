@@ -1,6 +1,6 @@
-use rust_broker::Broker;
-use rust_broker::{KafkaConfig, new_broker};
 use dotenv::dotenv;
+use rs_broker::Broker;
+use rs_broker::{KafkaConfig, new_broker};
 use std::env;
 
 #[tokio::main]

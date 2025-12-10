@@ -529,29 +529,27 @@ checksum = "7a2d987857b319362043e95f5353c0535c1f58eec5336fdfcf626430af7def58"
 
 [[package]]
 name = "rs-broker"
-version = "0.1.0"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e4bf1734ca53bca5b218eb75555300ba69d0d9af3c3d866791afe8f70aaec2cb"
 dependencies = [
  "async-trait",
- "dotenv",
  "env_logger",
  "futures",
  "log",
  "rdkafka",
- "rust-broker",
  "tokio",
 ]
 
 [[package]]
-name = "rust-broker"
-version = "1.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e69ec5c252746a09db8cd33953d3bfba3e433f1af5f476a1abb09775eaec327b"
+name = "rs-broker-demo"
+version = "0.1.0"
 dependencies = [
- "async-trait",
+ "dotenv",
  "env_logger",
- "futures",
  "log",
  "rdkafka",
+ "rs-broker",
  "tokio",
 ]
 

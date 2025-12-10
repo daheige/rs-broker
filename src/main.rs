@@ -1,6 +1,6 @@
-use rust_broker::Broker;
-use rust_broker::{KafkaConfig, new_broker};
 use dotenv::dotenv;
+use rs_broker::Broker;
+use rs_broker::{KafkaConfig, new_broker};
 use std::env;
 use std::sync::Arc;
 
@@ -19,13 +19,17 @@ async fn main() {
     let broker_clone = broker.clone();
     let topic = "my-topic";
     let handler = tokio::spawn(async move {
-        let delivery_status = broker_clone.publish(topic, "hello,world".as_bytes()).await;
-        if let Err(err) = delivery_status {
-            println!("Error sending message: {:?}", err);
-            return;
-        }
+        for i in 1..10 {
+            let delivery_status = broker_clone
+                .publish(topic, format!("hello,world,i={}", i).as_bytes())
+                .await;
+            if let Err(err) = delivery_status {
+                println!("Error sending message: {:?}", err);
+                continue;
+            }
 
-        println!("delivery status: {:?}", delivery_status);
+            println!("delivery status: {:?}", delivery_status);
+        }
     });
     handler.await.unwrap();
 
